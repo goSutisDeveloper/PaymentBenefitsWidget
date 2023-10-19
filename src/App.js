@@ -1,6 +1,9 @@
 import './App.css';
 import React,{useState,useEffect,useRef,useImperativeHandle } from "react";
 import {GettingStorage, SettingStorage} from "./Utils/GlobalFunction"; 
+import Name from "./Components/Name";
+import NameList from './Components/NameList';
+  
 
 function App() {
 
@@ -9,7 +12,7 @@ const [AllUserEmail, setAllUserEmail] = useState([]);
 
 useEffect(()=>{
   console.log("welcome")
-  LoadWidgetDetails();
+    LoadWidgetDetails();
   
   
   },[])
@@ -24,28 +27,45 @@ useEffect(()=>{
       console.log(key)
 
     });
-  
   }
+  // }
+  // const  testList = [
+  //   { "id": 1, "name": "Leanne Graham" },
+  //   { "id": 2, "name": "Ervin Howell" },
+  //   { "id": 3, "name": "Clementine Bauch" },
+  //   { "id": 4, "name": "Patricia Lebsack" }
+  //  ]
+
+  const testNames = [
+
+  ]
 
   const Payment_Benefit_List = JSON.parse(GettingStorage("Payment_Benefit_List"));
-  const names =   Object.keys(Payment_Benefit_List).map((name) => 
-  <li>{name}</li>
-  );
+  console.log(Payment_Benefit_List)
 
+  Object.keys(Payment_Benefit_List).map((key) => {
 
+    const value =  Payment_Benefit_List[key]; 
+    testNames.push({"id":value , "name": key})
+
+  });
+
+// console.log(testNames);
 
   return (
     <div className="App">
 
-        <ul>{names}</ul>   
+        {/* <ul>{names}</ul>    */}
 
-      {/* <header className="App-header">
+      <header className="App-header">
         <h1>
           In this related list you will see payment benefits List
         </h1>
-        <ul>{names}</ul>
+        {/* <NameList names  = {testList} /> */}
+        <NameList names  = {testNames} />
 
-      </header> */}
+        
+      </header>
     </div>
   );
 }

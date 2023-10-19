@@ -1,0 +1,20 @@
+.contact {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    /* margin-right: 400px; */
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    justify-content: center;
+    background-color: #eee;
+     width: 500px;
+    
+  }
+  
+  .contact span {
+    display: flex;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333;
+    justify-content: left;
+  }
