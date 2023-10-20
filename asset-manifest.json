@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PaymentBenefitsWidget/static/css/main.633df948.css",
+    "main.js": "/PaymentBenefitsWidget/static/js/main.d067b26c.js",
+    "static/js/787.28cb0dcd.chunk.js": "/PaymentBenefitsWidget/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/PaymentBenefitsWidget/index.html",
+    "main.633df948.css.map": "/PaymentBenefitsWidget/static/css/main.633df948.css.map",
+    "main.d067b26c.js.map": "/PaymentBenefitsWidget/static/js/main.d067b26c.js.map",
+    "787.28cb0dcd.chunk.js.map": "/PaymentBenefitsWidget/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.633df948.css",
+    "static/js/main.d067b26c.js"
+  ]
+}
